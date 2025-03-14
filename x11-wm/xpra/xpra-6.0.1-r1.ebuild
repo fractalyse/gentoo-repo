@@ -147,7 +147,7 @@ PATCHES=(
 
 src_prepare() {
 	default
-	eapply "${FILESDIR}/xpra-fix.patch
+	eapply "${FILESDIR}/xpra-fix.patch"
 	sed \
 		-e 's#UNITTESTS_DIR=`dirname $(readlink -f $0)`#: "${UNITTESTS_DIR:=`dirname $(readlink -f $0)`}"#' \
 		-e 's#INSTALL_ROOT="$SRC_DIR/dist/python${PYTHON_VERSION}"#: "${INSTALL_ROOT:=$SRC_DIR/dist/python${PYTHON_VERSION}}"#' \
