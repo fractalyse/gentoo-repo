@@ -1,4 +1,4 @@
-# Copyright ...
+# Copyright Fractalyse
 # Distributed under the GPL-2
 EAPI=7
 
@@ -9,7 +9,7 @@ SRC_URI="https://releases.pagure.org/bind-dyndb-ldap/bind-dyndb-ldap-${PV}.tar.g
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE="ldap ssl"
+IUSE=""
 
 # Dépendances requises pour la compilation et l'exécution.
 DEPEND="
@@ -17,6 +17,7 @@ DEPEND="
     dev-build/automake
     dev-build/libtool
     dev-build/make
+    net-dns/bind
 "
 #    dev-libs/openssl
 
@@ -37,5 +38,4 @@ src_compile() {
 
 src_install() {
     default
-#    dodoc README
 }
