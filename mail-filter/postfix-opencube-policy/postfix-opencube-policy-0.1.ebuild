@@ -1,4 +1,5 @@
-# Définition de l'EAPI (version de l'API utilisée par Portage)
+# Copyright Fractalyse
+# Distributed under the GPL-2
 EAPI=8
 
 DESCRIPTION="Postfix sender policy script which allows user to send email from their aliases"
@@ -23,8 +24,6 @@ src_install() {
     insinto /etc/postfix/postfix-files.d
     doins ${S}/sender_login_maps
 
-    # Facultatif : installation avec pip si nécessaire
-    # pip install --root="${D}" --prefix=/usr "${S}"
 }
 
 pkg_postinst() {

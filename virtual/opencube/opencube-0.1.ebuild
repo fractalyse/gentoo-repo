@@ -1,3 +1,5 @@
+# Copyright Fractalyse
+# Distributed under the GPL-2
 EAPI=8
 
 DESCRIPTION="Un métapaquet qui regroupe plusieurs applications utiles"
@@ -7,12 +9,12 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
 
-# Dépendances que le métapaquet installera
 RDEPEND="
    dev-libs/cyrus-sasl[ssl]
    mail-filter/amavisd-new[clamav,ldap,spamassassin]
    mail-filter/opendkim[ldap,sasl,ssl]
    mail-filter/opendmarc
+   mail-filter/postfix-opencube-policy
    mail-filter/spamassassin[ipv6,ldap,ssl]
    mail-mta/postfix[dovecot-sasl,ldap,sasl,ssl]
    net-dns/bind[caps,gssapi]
@@ -22,6 +24,5 @@ RDEPEND="
    net-mail/dovecot[ldap]
 "
 
-# Pas de compilation, pas de dépendances de construction
 DEPEND=""
 BDEPEND=""

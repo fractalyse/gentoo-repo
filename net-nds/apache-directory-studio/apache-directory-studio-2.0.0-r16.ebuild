@@ -1,3 +1,4 @@
+# Copyright Fractalyse
 EAPI=8
 
 LICENSE="Apache-2.0"

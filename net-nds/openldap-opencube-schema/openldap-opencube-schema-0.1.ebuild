@@ -1,3 +1,5 @@
+# Copyright Fractalyse
+# Distributed under the GPL-2
 EAPI=8
 
 DESCRIPTION="Schémas additionnels pour OpenLDAP"
@@ -16,6 +18,5 @@ S="${WORKDIR}/openldap-opencube-schema-0.1"
 
 src_install() {
     insinto /etc/openldap/schema
-    #doins *.schema
     doins *.ldif
 }
