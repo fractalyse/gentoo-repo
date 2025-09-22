@@ -8,7 +8,7 @@ SRC_URI="https://github.com/fractalyse/openldap-opencube-schema/archive/v0.3.tar
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS="amd64 x86 arm64"
 IUSE=""
 
 DEPEND="net-nds/openldap"
