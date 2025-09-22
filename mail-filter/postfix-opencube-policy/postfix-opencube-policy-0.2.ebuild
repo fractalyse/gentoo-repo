@@ -8,10 +8,10 @@ SRC_URI="https://github.com/fractalyse/postfix-opencube-policy/archive/refs/tags
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="amd64"
+KEYWORDS="amd64 arm64"
 IUSE=""
 
-RDEPEND="dev-lang/python:3.12
+RDEPEND="dev-lang/python:3.13
 	 mail-mta/postfix"
 DEPEND="${RDEPEND}"
 
