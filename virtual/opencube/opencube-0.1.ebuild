@@ -6,7 +6,7 @@ DESCRIPTION="Un métapaquet qui regroupe plusieurs applications utiles"
 HOMEPAGE="https://github.com/fractalyse"
 LICENSE="metapackage"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS="amd64 x86 arm64"
 IUSE=""
 
 RDEPEND="
